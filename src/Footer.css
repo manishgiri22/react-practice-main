@@ -1,0 +1,20 @@
+.footercontainer{
+    height:400px;
+    background-color: #232f3e;
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    color:white;
+    padding-top:50px;
+    
+}
+.contentcontainer {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.contentcontainer a{
+    text-decoration:none;
+    color:white;
+
+}

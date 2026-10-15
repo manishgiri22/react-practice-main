@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* body{
+  background-color: #f5f5f5;
+} */
+/* .container{
+  width:100vw;
+  height:100vh;
+
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0.25vw;
+  padding:1vh 1vh;
+
+  
+}
+.textcontainer{
+  display:flex;
+  align-items:center;
+  gap:none;
+}
+.card{
+  height:20vh;
+  width:15vw;
+}
+.card image{
+  height:100%;
+  width:100%;
+  padding:10px;
+  object-fit:cover;
+  object-position:center;
+} */
