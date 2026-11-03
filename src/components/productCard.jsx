@@ -1,7 +1,8 @@
 function ProductCard({productValue}){
     return (
         <>
-         <div className = 'cardContainer'>
+         <div>
+            <button className="flex flex-end">Add Product</button>
             <div className="card">
                 <img src={productValue.image} alt="travel"/>
                  <div className="content">

@@ -21,6 +21,11 @@ import toImportImage from "./components/toImportImage"
 import Netflix from "./pages/Netflix"
 import NetflixBody from "./pages/NetflixBody"
 import bgimage from "./assets/Netflixbg.png"
+import ToDoList from "./components/toDoList"
+import ProductGrid from "./components/productState"
+import StateBasis from "./components/statebasis"
+import ToDo from "./components/ToDo"
+
 
 
 
@@ -97,7 +102,9 @@ function App(){
     <Route path = '/importimagelearning' element = {<toImportImage/>}/>
   </Routes>
   <Footer/> */}
-<div 
+
+  {/* Netflix clone app code */}
+{/* <div 
       className="bg-cover bg-center object-fill "
       style={{ backgroundImage: `url(${bgimage})` }}
     >
@@ -106,12 +113,23 @@ function App(){
   
   <Route path = '/' element = {<NetflixBody />}/>
 
+</Routes> 
+</div> */}
+
+
+
+
+
+
+{/* <HomePage /> */}
+{/* <ToDoList/> */}
+{/* <Counter/> */}
+<Routes>
+  <Route path='/productstate' element = {<ProductGrid/>}/>
+  <Route path='stateBasis' element = {<StateBasis/>}/>
+  <Route path="todo" element = {<ToDo/>}/>
+  <Route path='todolist' element = {<ToDoList/>}/>
 </Routes>
-
-
-
-</div>
-
 
 
 
@@ -145,13 +163,15 @@ function App(){
   }
   </div> */}
   
-
-    {/* {products.map((item,index) => {
-        return <ProductCard productValue = {item} />
-
-  })}
+{/* <div className = "grid grid-cols-4 ">
+     {products.map((item,index) => {
+       return <ProductCard productValue = {item} />
+       
+      })}
+  </div> */}
+      
   
-   <h1 style={{color:'red'}}>All users</h1>  */}
+   {/* <h1 style={{color:'red'}}>All users</h1>  */} 
     {/*same as dome  */}
    
    {/* {
