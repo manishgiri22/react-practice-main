@@ -25,6 +25,9 @@ import ToDoList from "./components/toDoList"
 import ProductGrid from "./components/productState"
 import StateBasis from "./components/statebasis"
 import ToDo from "./components/ToDo"
+import ToDoBasic from "./components/ToDoBasic"
+import BlogMgmt from "./components/BlogMgmt"
+import BlogManagement from "./components/BlogManagement"
 
 
 
@@ -129,6 +132,9 @@ function App(){
   <Route path='stateBasis' element = {<StateBasis/>}/>
   <Route path="todo" element = {<ToDo/>}/>
   <Route path='todolist' element = {<ToDoList/>}/>
+  <Route path="todobasic" element = {<ToDoBasic/>}/>
+  <Route path="blogmanagementsystem" element={<BlogMgmt/>}/>
+  <Route path="Blogmanagement" element={<BlogManagement/>}/>
 </Routes>
 
 
