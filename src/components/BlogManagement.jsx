@@ -1,9 +1,10 @@
 
-import { useState } from "react";
+import { useState , useEffect} from "react";
 
 function BlogManagement() {
   // Store all blog posts
-  const [blogs, setBlogs] = useState([]);
+  const blogfromlocal = JSON.parse(localStorage.getItem("blogdata")) || []
+  const [blogs, setBlogs] = useState(["blogfromlocal"]);
 
   // Store form values
   const [title, setTitle] = useState("");
@@ -16,13 +17,24 @@ const userValue = {
   name : "manish",
   address : "btm"
 }  // convert it to string and send 
-  // locastorage
+  
+
+  // set item to the use effect 
+  useEffect(()=>{
+    // localstorage
   localStorage.setItem("name",JSON.stringify(userValue))  // key and value  ( string marta linxw so )
   localStorage.setItem("name","nabin")
+  localStorage.setItem("blogdata",JSON.stringify(blogs)) // as string set hunxw local storage ma 
+
+  } ,[])   
+    
 
   // arko page ma get garna ko lagi next component ma 
   const myName = localStorage.getItem("name")
   const user = JSON.parse(localStorage.getItem("user"))  // converts strings to object 
+  
+  // remove from local storage 
+  // localStorage.remove(name)
 
   // Store index of blog being edited
   const [editingIndex, setEditingIndex] = useState(null);
