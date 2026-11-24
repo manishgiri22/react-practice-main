@@ -29,6 +29,7 @@ import ToDoBasic from "./components/ToDoBasic"
 import BlogMgmt from "./components/BlogMgmt"
 import BlogManagement from "./components/BlogManagement"
 import News from "./pages/News"
+import ApiUser from "./pages/ApiUser"
 
 
 
@@ -137,6 +138,7 @@ function App(){
   <Route path="blogmanagementsystem" element={<BlogMgmt/>}/>
   <Route path="Blogmanagement" element={<BlogManagement/>}/>
   <Route path="news" element ={<News/>}/>
+  <Route path="apiuser" element ={<ApiUser/>}/>
 </Routes>
 
 

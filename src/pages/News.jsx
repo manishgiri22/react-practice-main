@@ -33,8 +33,7 @@ const getNews =  async() =>{   // async await should comes together
 
         <button
           onClick={getNews}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition duration-300"
-        >
+          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition duration-300">
           Search
         </button>
       </div>    
